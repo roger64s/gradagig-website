@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Grad-a-Gig: Knowledge-based work for persons with disabilities, minorities, and women. Earn while you learn. Outcome-based delivery with AI-assisted pods.">
+  <title>Grad-a-Gig | Earn While You Learn</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#f0fdfa',
+              100: '#ccfbf1',
+              200: '#99f6e4',
+              300: '#5eead4',
+              400: '#2dd4bf',
+              500: '#14b8a6',
+              600: '#0d9488',
+              700: '#1A9B8C',
+              800: '#115e59',
+              900: '#0f3d3a',
+            },
+            gold: {
+              100: '#fef3c7',
+              200: '#fde68a',
+              300: '#fcd34d',
+              400: '#fbbf24',
+              500: '#F4C430',
+              600: '#d97706',
+              700: '#b45309',
+            },
+            coral: {
+              100: '#ffe4e6',
+              200: '#fecdd3',
+              300: '#fda4af',
+              400: '#fb7185',
+              500: '#F08A9B',
+              600: '#e11d48',
+              700: '#be123c',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .gradient-hero {
+      background: linear-gradient(135deg, #0f3d3a 0%, #1A9B8C 50%, #0d9488 100%);
+    }
+    .card-hover {
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .card-hover:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+
+  <!-- Header -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 lg:h-20">
+        <a href="#" class="flex items-center gap-3" aria-label="Grad-a-Gig home">
+          <img src="docs/Grad-a-gig_Logo.png" alt="" class="w-10 h-10" width="40" height="40">
+          <span class="text-xl lg:text-2xl font-bold text-slate-900">Grad-a-Gig</span>
+        </a>
+        <nav class="hidden md:flex items-center gap-8" aria-label="Main navigation">
+          <a href="#model" class="text-sm font-medium text-slate-600 hover:text-brand-700 transition-colors">Why Us</a>
+          <a href="#stakeholders" class="text-sm font-medium text-slate-600 hover:text-brand-700 transition-colors">Stakeholders</a>
+          <a href="#demos" class="text-sm font-medium text-slate-600 hover:text-brand-700 transition-colors">Demos</a>
+          <a href="#team" class="text-sm font-medium text-slate-600 hover:text-brand-700 transition-colors">Team</a>
+          <a href="#register" class="text-sm font-medium text-slate-600 hover:text-brand-700 transition-colors">Register</a>
+        </nav>
+        <a href="#register" class="hidden md:inline-flex items-center justify-center px-5 py-2.5 rounded-lg bg-brand-700 text-white text-sm font-semibold hover:bg-brand-800 transition-colors focus:outline-none focus:ring-2 focus:ring-brand-500 focus:ring-offset-2">
+          Get Started
+        </a>
+        <button id="mobile-menu-button" class="md:hidden p-2 rounded-lg text-slate-600 hover:bg-slate-100" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden border-t border-slate-200 bg-white">
+      <div class="px-4 py-3 space-y-2">
+        <a href="#model" class="block px-3 py-2 rounded-lg text-base font-medium text-slate-600 hover:bg-slate-50 hover:text-brand-700">Why Us</a>
+        <a href="#stakeholders" class="block px-3 py-2 rounded-lg text-base font-medium text-slate-600 hover:bg-slate-50 hover:text-brand-700">Stakeholders</a>
+        <a href="#demos" class="block px-3 py-2 rounded-lg text-base font-medium text-slate-600 hover:bg-slate-50 hover:text-brand-700">Demos</a>
+        <a href="#team" class="block px-3 py-2 rounded-lg text-base font-medium text-slate-600 hover:bg-slate-50 hover:text-brand-700">Team</a>
+        <a href="#register" class="block px-3 py-2 rounded-lg text-base font-medium text-slate-600 hover:bg-slate-50 hover:text-brand-700">Register</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative pt-32 pb-20 lg:pt-44 lg:pb-32 gradient-hero overflow-hidden" aria-labelledby="hero-heading">
+    <div class="absolute inset-0 opacity-10" aria-hidden="true">
+      <div class="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-white blur-3xl"></div>
+      <div class="absolute top-1/2 -left-24 w-72 h-72 rounded-full bg-brand-300 blur-3xl"></div>
+    </div>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 text-gold-200 text-sm font-medium mb-8 border border-white/10">
+        <span class="w-2 h-2 rounded-full bg-gold-400 animate-pulse"></span>
+        Cooperative business model inspired by Amul
+      </div>
+      <h1 id="hero-heading" class="text-4xl sm:text-5xl lg:text-7xl font-extrabold text-white tracking-tight mb-6 leading-tight">
+        Knowledge-Based Work for <span class="text-gold-300">Persons with Disabilities</span>, Minorities, and Women
+      </h1>
+      <p class="text-lg sm:text-xl lg:text-2xl text-slate-200 max-w-3xl mx-auto mb-10 leading-relaxed">
+        Earn while you Learn. We deliver real outcomes through AI-assisted delivery pods — not hours, not headcount.
+      </p>
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="#register" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 rounded-xl bg-gold-500 text-brand-900 font-bold text-lg hover:bg-gold-400 transition-colors focus:outline-none focus:ring-2 focus:ring-gold-300 focus:ring-offset-2 focus:ring-offset-brand-900">
+          Join the Cooperative
+        </a>
+        <a href="#model" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 rounded-xl border-2 border-white/30 text-white font-semibold text-lg hover:bg-white/10 transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-brand-900">
+          Explore the Model
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Pillars -->
+  <section id="model" class="py-20 lg:py-28 bg-white" aria-labelledby="pillars-heading">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 id="pillars-heading" class="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">Outcome-Based Delivery</h2>
+        <p class="text-lg text-slate-600">Four pillars that replace traditional staffing with measurable, risk-free results.</p>
+      </div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+        <article class="card-hover p-6 lg:p-8 rounded-2xl bg-slate-50 border border-slate-100">
+          <div class="w-12 h-12 rounded-xl bg-brand-100 text-brand-700 flex items-center justify-center text-xl font-bold mb-5">1</div>
+          <h3 class="text-xl font-bold text-slate-900 mb-3">Define Outcomes</h3>
+          <p class="text-slate-600 leading-relaxed">We agree on deliverables, not hours and not headcount. Clarity before execution.</p>
+        </article>
+        <article class="card-hover p-6 lg:p-8 rounded-2xl bg-slate-50 border border-slate-100">
+          <div class="w-12 h-12 rounded-xl bg-brand-100 text-brand-700 flex items-center justify-center text-xl font-bold mb-5">2</div>
+          <h3 class="text-xl font-bold text-slate-900 mb-3">AI-Assisted Pod</h3>
+          <p class="text-slate-600 leading-relaxed">AI plus trained students, PwDs, and women carers form an agile delivery unit.</p>
+        </article>
+        <article class="card-hover p-6 lg:p-8 rounded-2xl bg-slate-50 border border-slate-100">
+          <div class="w-12 h-12 rounded-xl bg-brand-100 text-brand-700 flex items-center justify-center text-xl font-bold mb-5">3</div>
+          <h3 class="text-xl font-bold text-slate-900 mb-3">End-to-End Execution</h3>
+          <p class="text-slate-600 leading-relaxed">From build and test to go-to-market — one pod owns the full lifecycle.</p>
+        </article>
+        <article class="card-hover p-6 lg:p-8 rounded-2xl bg-slate-50 border border-slate-100">
+          <div class="w-12 h-12 rounded-xl bg-brand-100 text-brand-700 flex items-center justify-center text-xl font-bold mb-5">4</div>
+          <h3 class="text-xl font-bold text-slate-900 mb-3">Pay on Delivery</h3>
+          <p class="text-slate-600 leading-relaxed">No results, no payment. Clients only pay when agreed outcomes are met.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why This Model Wins / Our DNA -->
+  <section class="py-20 lg:py-28 bg-slate-50" aria-labelledby="dna-heading">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-start">
+        <div>
+          <h2 id="dna-heading" class="text-3xl sm:text-4xl font-bold text-slate-900 mb-6">Why This Model Wins</h2>
+          <p class="text-lg text-slate-600 mb-8 leading-relaxed">
+            Grad-a-Gig combines cooperative economics with modern AI-assisted delivery. We unlock talent from underserved communities and channel it into high-quality, outcome-based work.
+          </p>
+          <ul class="space-y-5">
+            <li class="flex gap-4">
+              <div class="flex-shrink-0 w-10 h-10 rounded-full bg-brand-100 text-brand-700 flex items-center justify-center">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg>
+              </div>
+              <div>
+                <h4 class="text-lg font-bold text-slate-900">Unknown Domains, Fast Learning</h4>
+                <p class="text-slate-600">Our pods are trained to research, prototype, and deliver in new sectors quickly.</p>
+              </div>
+            </li>
+            <li class="flex gap-4">
+              <div class="flex-shrink-0 w-10 h-10 rounded-full bg-brand-100 text-brand-700 flex items-center justify-center">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+              </div>
+              <div>
+                <h4 class="text-lg font-bold text-slate-900">Agile by Design</h4>
+                <p class="text-slate-600">Small pods, short cycles, continuous feedback, and rapid iteration.</p>
+              </div>
+            </li>
+            <li class="flex gap-4">
+              <div class="flex-shrink-0 w-10 h-10 rounded-full bg-brand-100 text-brand-700 flex items-center justify-center">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
+              </div>
+              <div>
+                <h4 class="text-lg font-bold text-slate-900">Zero Upfront Risk</h4>
+                <p class="text-slate-600">Source code escrow and pay-on-delivery terms protect client investment.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="bg-white rounded-3xl p-8 lg:p-10 border border-slate-100 shadow-sm">
+          <h3 class="text-2xl font-bold text-slate-900 mb-6">Our DNA</h3>
+          <div class="space-y-6">
+            <div>
+              <div class="flex items-center justify-between mb-2">
+                <span class="font-semibold text-slate-900">Inclusion First</span>
+                <span class="text-sm text-brand-700 font-medium">100%</span>
+              </div>
+              <div class="w-full bg-slate-100 rounded-full h-2"><div class="bg-brand-600 h-2 rounded-full" style="width: 100%"></div></div>
+            </div>
+            <div>
+              <div class="flex items-center justify-between mb-2">
+                <span class="font-semibold text-slate-900">Outcome Accountability</span>
+                <span class="text-sm text-brand-700 font-medium">100%</span>
+              </div>
+              <div class="w-full bg-slate-100 rounded-full h-2"><div class="bg-brand-600 h-2 rounded-full" style="width: 100%"></div></div>
+            </div>
+            <div>
+              <div class="flex items-center justify-between mb-2">
+                <span class="font-semibold text-slate-900">AI-Augmented Delivery</span>
+                <span class="text-sm text-brand-700 font-medium">Always on</span>
+              </div>
+              <div class="w-full bg-slate-100 rounded-full h-2"><div class="bg-brand-600 h-2 rounded-full" style="width: 100%"></div></div>
+            </div>
+            <div>
+              <div class="flex items-center justify-between mb-2">
+                <span class="font-semibold text-slate-900">Cooperative Ownership</span>
+                <span class="text-sm text-brand-700 font-medium">Member-driven</span>
+              </div>
+              <div class="w-full bg-slate-100 rounded-full h-2"><div class="bg-brand-600 h-2 rounded-full" style="width: 100%"></div></div>
+            </div>
+          </div>
+          <div class="mt-8 p-4 rounded-xl bg-brand-50 border border-brand-100">
+            <p class="text-brand-900 font-medium text-sm">
+              Inspired by the Amul cooperative model: collective empowerment, shared value, and scalable local impact.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stakeholder Value Blocks -->
+  <section id="stakeholders" class="py-20 lg:py-28 bg-white" aria-labelledby="stakeholders-heading">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 id="stakeholders-heading" class="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">Value for Every Stakeholder</h2>
+        <p class="text-lg text-slate-600">A cooperative platform designed to create wins across the ecosystem.</p>
+      </div>
+      <div class="grid md:grid-cols-2 gap-6 lg:gap-8">
+        <article class="card-hover p-8 rounded-2xl bg-slate-50 border border-slate-100">
+          <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center mb-5">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 mb-3">For Clients</h3>
+          <p class="text-slate-600 leading-relaxed">Outcome-priced projects, source code escrow, and delivery pods that adapt to your domain. Pay only when results are proven.</p>
+        </article>
+        <article class="card-hover p-8 rounded-2xl bg-slate-50 border border-slate-100">
+          <div class="w-12 h-12 rounded-xl bg-violet-100 text-violet-700 flex items-center justify-center mb-5">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 mb-3">For Students</h3>
+          <p class="text-slate-600 leading-relaxed">Earn while you learn. Work on real projects, build portfolios, and get mentorship from industry veterans.</p>
+        </article>
+        <article class="card-hover p-8 rounded-2xl bg-slate-50 border border-slate-100">
+          <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center mb-5">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 mb-3">For PwDs, Minorities, and Women</h3>
+          <p class="text-slate-600 leading-relaxed">Inclusive, accessible, remote-first work. Fair pay, dignity, and a cooperative voice in how value is shared.</p>
+        </article>
+        <article class="card-hover p-8 rounded-2xl bg-slate-50 border border-slate-100">
+          <div class="w-12 h-12 rounded-xl bg-rose-100 text-rose-700 flex items-center justify-center mb-5">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 mb-3">For Investors & Family Offices</h3>
+          <p class="text-slate-600 leading-relaxed">Impact-aligned returns through a scalable, inclusive workforce model with measurable social outcomes.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Founding Team -->
+  <section id="team" class="py-20 lg:py-28 bg-slate-50" aria-labelledby="team-heading">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 id="team-heading" class="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">Founding Team</h2>
+        <p class="text-lg text-slate-600">Leaders committed to inclusive, outcome-based work.</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+        <article class="card-hover p-6 rounded-2xl bg-white border border-slate-100 text-center">
+          <div class="w-20 h-20 mx-auto rounded-full bg-brand-100 text-brand-700 flex items-center justify-center text-2xl font-bold mb-4">SR</div>
+          <h3 class="text-lg font-bold text-slate-900">Srirajan Rajagopalant (Roger)</h3>
+          <p class="text-brand-700 font-medium text-sm mb-3">Founder — Chief Executive Officer</p>
+          <p class="text-slate-600 text-sm">Driving vision, strategy, and the cooperative mission forward.</p>
+        </article>
+        <article class="card-hover p-6 rounded-2xl bg-white border border-slate-100 text-center">
+          <div class="w-20 h-20 mx-auto rounded-full bg-brand-100 text-brand-700 flex items-center justify-center text-2xl font-bold mb-4">GV</div>
+          <h3 class="text-lg font-bold text-slate-900">Ganesan Vaideeswaran</h3>
+          <p class="text-brand-700 font-medium text-sm mb-3">Mentor/Advisor — Chief Revenue Officer</p>
+          <p class="text-slate-600 text-sm">Building client relationships and scaling revenue outcomes.</p>
+        </article>
+        <article class="card-hover p-6 rounded-2xl bg-white border border-slate-100 text-center">
+          <div class="w-20 h-20 mx-auto rounded-full bg-brand-100 text-brand-700 flex items-center justify-center text-2xl font-bold mb-4">RS</div>
+          <h3 class="text-lg font-bold text-slate-900">Rajiv Srivastava</h3>
+          <p class="text-brand-700 font-medium text-sm mb-3">Mentor/Advisor — Chief Technology Officer</p>
+          <p class="text-slate-600 text-sm">Leading AI-assisted delivery, architecture, and engineering pods.</p>
+        </article>
+        <article class="card-hover p-6 rounded-2xl bg-white border border-slate-100 text-center">
+          <div class="w-20 h-20 mx-auto rounded-full bg-brand-100 text-brand-700 flex items-center justify-center text-2xl font-bold mb-4">AS</div>
+          <h3 class="text-lg font-bold text-slate-900">Abhinaya Sudharsanam</h3>
+          <p class="text-brand-700 font-medium text-sm mb-3">Brand Manager</p>
+          <p class="text-slate-600 text-sm">Crafting the Grad-a-Gig story and inclusive brand experience.</p>
+        </article>
+        <article class="card-hover p-6 rounded-2xl bg-white border border-slate-100 text-center">
+          <div class="w-20 h-20 mx-auto rounded-full bg-coral-100 text-coral-700 flex items-center justify-center text-2xl font-bold mb-4">JC</div>
+          <h3 class="text-lg font-bold text-slate-900">Josy Chow</h3>
+          <p class="text-coral-700 font-medium text-sm mb-3">PwD Ambassador</p>
+          <p class="text-slate-600 text-sm">Advocating for accessibility and disability inclusion across pods.</p>
+        </article>
+        <article class="card-hover p-6 rounded-2xl bg-white border border-slate-100 text-center">
+          <div class="w-20 h-20 mx-auto rounded-full bg-coral-100 text-coral-700 flex items-center justify-center text-2xl font-bold mb-4">NK</div>
+          <h3 class="text-lg font-bold text-slate-900">Naresh Kumar</h3>
+          <p class="text-coral-700 font-medium text-sm mb-3">PwD Ambassador</p>
+          <p class="text-slate-600 text-sm">Championing dignified, remote-first work for persons with disabilities.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Demos Section -->
+  <section id="demos" class="py-20 lg:py-28 bg-white" aria-labelledby="demos-heading">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 id="demos-heading" class="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">Product Demos</h2>
+        <p class="text-lg text-slate-600">See our AI-assisted delivery pods in action through live product demos.</p>
+      </div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+        <article class="card-hover flex flex-col p-8 rounded-2xl bg-gradient-to-br from-slate-50 to-white border border-slate-100">
+          <div class="w-14 h-14 rounded-2xl bg-brand-100 text-brand-700 flex items-center justify-center mb-6">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+          </div>
+          <h3 class="text-2xl font-bold text-slate-900 mb-3">MOC Workflow Demo</h3>
+          <p class="text-slate-600 leading-relaxed mb-8 flex-grow">
+            Explore the Management of Change (MOC) dashboard — an outcome-based workflow interface designed for transparent project tracking and delivery.
+          </p>
+          <a href="https://moc-workflow-demo-hbnvit1ef-roger-e1a3.vercel.app/dashboard" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 w-full px-6 py-3.5 rounded-xl bg-brand-700 text-white font-semibold hover:bg-brand-800 transition-colors focus:outline-none focus:ring-2 focus:ring-brand-500 focus:ring-offset-2">
+            Open MOC Demo
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+          </a>
+        </article>
+        <article class="card-hover flex flex-col p-8 rounded-2xl bg-gradient-to-br from-slate-50 to-white border border-slate-100">
+          <div class="w-14 h-14 rounded-2xl bg-violet-100 text-violet-700 flex items-center justify-center mb-6">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+          </div>
+          <h3 class="text-2xl font-bold text-slate-900 mb-3">CRM Automation Demo</h3>
+          <p class="text-slate-600 leading-relaxed mb-8 flex-grow">
+            A HubSpot-style CRM automation demo showing how our pods streamline lead management and customer engagement.
+          </p>
+          <a href="https://hubspot-crm-demo-one.vercel.app/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 w-full px-6 py-3.5 rounded-xl bg-violet-700 text-white font-semibold hover:bg-violet-800 transition-colors focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-offset-2">
+            Open CRM Demo
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+          </a>
+        </article>
+        <article class="card-hover flex flex-col p-8 rounded-2xl bg-gradient-to-br from-slate-50 to-white border border-slate-100 border-dashed">
+          <div class="w-14 h-14 rounded-2xl bg-slate-100 text-slate-500 flex items-center justify-center mb-6">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path></svg>
+          </div>
+          <h3 class="text-2xl font-bold text-slate-900 mb-3">Upcoming Demo</h3>
+          <p class="text-slate-600 leading-relaxed mb-8 flex-grow">
+            A new product demo is in the works. Check back soon to see more of our AI-assisted delivery capabilities.
+          </p>
+          <button type="button" disabled class="w-full px-6 py-3.5 rounded-xl bg-slate-200 text-slate-500 font-semibold cursor-not-allowed">
+            Coming Soon
+          </button>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Registration Section -->
+  <section id="register" class="py-20 lg:py-28 bg-slate-50" aria-labelledby="register-heading">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 id="register-heading" class="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">Register Your Interest</h2>
+        <p class="text-lg text-slate-600">Choose the path that fits you. We will be in touch with next steps.</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6 lg:gap-8">
+        <div class="card-hover p-8 rounded-2xl bg-slate-50 border border-slate-100 flex flex-col">
+          <div class="w-12 h-12 rounded-xl bg-brand-100 text-brand-700 flex items-center justify-center mb-5">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 mb-2">Client Registration</h3>
+          <p class="text-slate-600 mb-6 flex-grow">Submit a project, request a pod, and explore outcome-based pricing.</p>
+          <form class="space-y-4" onsubmit="event.preventDefault(); alert('Thank you! Client registration placeholder.');">
+            <label class="sr-only" for="client-name">Client name</label>
+            <input id="client-name" type="text" placeholder="Organization name" class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:border-brand-500 focus:ring-2 focus:ring-brand-200 outline-none transition-colors">
+            <label class="sr-only" for="client-email">Client email</label>
+            <input id="client-email" type="email" placeholder="Work email" class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:border-brand-500 focus:ring-2 focus:ring-brand-200 outline-none transition-colors">
+            <button type="submit" class="w-full px-5 py-3 rounded-lg bg-brand-700 text-white font-semibold hover:bg-brand-800 transition-colors focus:outline-none focus:ring-2 focus:ring-brand-500 focus:ring-offset-2">
+              Register as Client
+            </button>
+          </form>
+        </div>
+        <div class="card-hover p-8 rounded-2xl bg-slate-50 border border-slate-100 flex flex-col">
+          <div class="w-12 h-12 rounded-xl bg-violet-100 text-violet-700 flex items-center justify-center mb-5">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path></svg>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 mb-2">Student Registration</h3>
+          <p class="text-slate-600 mb-6 flex-grow">Earn while you learn. Join a pod and work on real client outcomes.</p>
+          <form class="space-y-4" onsubmit="event.preventDefault(); alert('Thank you! Student registration placeholder.');">
+            <label class="sr-only" for="student-name">Student name</label>
+            <input id="student-name" type="text" placeholder="Full name" class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:border-brand-500 focus:ring-2 focus:ring-brand-200 outline-none transition-colors">
+            <label class="sr-only" for="student-email">Student email</label>
+            <input id="student-email" type="email" placeholder="Email address" class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:border-brand-500 focus:ring-2 focus:ring-brand-200 outline-none transition-colors">
+            <button type="submit" class="w-full px-5 py-3 rounded-lg bg-violet-700 text-white font-semibold hover:bg-violet-800 transition-colors focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-offset-2">
+              Register as Student
+            </button>
+          </form>
+        </div>
+        <div class="card-hover p-8 rounded-2xl bg-slate-50 border border-slate-100 flex flex-col">
+          <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center mb-5">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 mb-2">PwD / Women Registration</h3>
+          <p class="text-slate-600 mb-6 flex-grow">Access remote, inclusive, knowledge-based work on your terms.</p>
+          <form class="space-y-4" onsubmit="event.preventDefault(); alert('Thank you! PwD / Women registration placeholder.');">
+            <label class="sr-only" for="talent-name">Talent name</label>
+            <input id="talent-name" type="text" placeholder="Full name" class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:border-brand-500 focus:ring-2 focus:ring-brand-200 outline-none transition-colors">
+            <label class="sr-only" for="talent-email">Talent email</label>
+            <input id="talent-email" type="email" placeholder="Email address" class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:border-brand-500 focus:ring-2 focus:ring-brand-200 outline-none transition-colors">
+            <button type="submit" class="w-full px-5 py-3 rounded-lg bg-amber-600 text-white font-semibold hover:bg-amber-700 transition-colors focus:outline-none focus:ring-2 focus:ring-amber-500 focus:ring-offset-2">
+              Register as Talent
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-slate-900 text-slate-300 py-12" role="contentinfo">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
+        <div class="lg:col-span-2">
+          <a href="#" class="flex items-center gap-3 mb-4" aria-label="Grad-a-Gig home">
+            <img src="docs/Grad-a-gig_Logo.png" alt="" class="w-10 h-10" width="40" height="40">
+            <span class="text-2xl font-bold text-white">Grad-a-Gig</span>
+          </a>
+          <p class="text-slate-400 max-w-sm leading-relaxed">
+            Knowledge-based work for persons with disabilities, minorities, and women. Earn while you learn.
+          </p>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4">Quick Links</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#model" class="hover:text-white transition-colors">Why This Model Wins</a></li>
+            <li><a href="#stakeholders" class="hover:text-white transition-colors">Stakeholders</a></li>
+            <li><a href="#demos" class="hover:text-white transition-colors">Product Demos</a></li>
+            <li><a href="#team" class="hover:text-white transition-colors">Founding Team</a></li>
+            <li><a href="#register" class="hover:text-white transition-colors">Register</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4">Contact</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="https://gradagig.com" class="hover:text-white transition-colors">gradagig.com</a></li>
+            <li><span class="text-slate-400">Coming soon: support &amp; careers</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-slate-800 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
+        <p class="text-sm text-slate-400">&copy; 2026 Grad-a-Gig. All rights reserved.</p>
+        <div class="flex items-center gap-6 text-sm">
+          <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+          <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    mobileMenuButton.addEventListener('click', () => {
+      const expanded = mobileMenuButton.getAttribute('aria-expanded') === 'true';
+      mobileMenuButton.setAttribute('aria-expanded', !expanded);
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Close mobile menu when clicking a link
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenuButton.setAttribute('aria-expanded', 'false');
+        mobileMenu.classList.add('hidden');
+      });
+    });
+  </script>
+</body>
+</html>
