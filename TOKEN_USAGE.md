@@ -11,6 +11,7 @@ After each agent session or milestone, append a new row to the table below with 
 | Date       | Task / Milestone                        | Agent / Model                | Input Tokens | Output Tokens | Total Tokens | Notes / Cost Estimate |
 |------------|-----------------------------------------|------------------------------|--------------|---------------|--------------|------------------------|
 | 2026-08-09 | Initial landing page creation (index.html) | GitHub Copilot (Kimi K2.7 Code) | TBD          | TBD           | TBD          | Single-turn page build |
+| 2026-08-10 | Rewrite CodeWithKris as R&D prototype page; remove partner framing from index.html | GitHub Copilot (Kimi K2.7 Code) | TBD          | TBD           | TBD          | New codewithkris.html + cwk_*.png assets; pushed to GitHub |
 
 ## Model Reference
 
