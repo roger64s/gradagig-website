@@ -48,6 +48,10 @@
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.loom.com">
+  <link rel="preconnect" href="https://www.loom.com">
+  <link rel="dns-prefetch" href="https://cdn.loom.com">
+  <link rel="dns-prefetch" href="https://www.loom.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
     body { font-family: 'Inter', sans-serif; }
@@ -165,8 +169,12 @@
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
           </button>
         </div>
-        <div class="relative aspect-video">
-          <iframe id="demo-iframe" src="" title="Grad-a-Gig product demo" class="absolute inset-0 w-full h-full" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        <div class="relative aspect-video bg-slate-900">
+          <div id="demo-loader" class="absolute inset-0 flex flex-col items-center justify-center z-10">
+            <div class="w-10 h-10 border-4 border-gold-500/30 border-t-gold-500 rounded-full animate-spin mb-3"></div>
+            <p class="text-slate-300 text-sm">Loading demo…</p>
+          </div>
+          <iframe id="demo-iframe" src="" title="Grad-a-Gig product demo" class="absolute inset-0 w-full h-full z-20" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen allow="fullscreen"></iframe>
         </div>
       </div>
     </div>
@@ -181,7 +189,18 @@
       var demoIframe = document.getElementById('demo-iframe');
       var demoEmbedUrl = 'https://www.loom.com/embed/3df0e563aac4452882ef6cb45b61d002';
 
+      var demoLoader = document.getElementById('demo-loader');
+
+      function showLoader() {
+        demoLoader.classList.remove('hidden');
+      }
+
+      function hideLoader() {
+        demoLoader.classList.add('hidden');
+      }
+
       function openDemo() {
+        showLoader();
         demoIframe.src = demoEmbedUrl;
         demoModal.classList.remove('hidden');
         document.body.style.overflow = 'hidden';
@@ -191,7 +210,13 @@
         demoModal.classList.add('hidden');
         demoIframe.src = '';
         document.body.style.overflow = '';
+        showLoader();
       }
+
+      demoIframe.addEventListener('load', function () {
+        // Give Loom player a moment to render before hiding loader
+        setTimeout(hideLoader, 900);
+      });
 
       demoOpen.addEventListener('click', openDemo);
       demoClose.addEventListener('click', closeDemo);
