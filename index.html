@@ -131,50 +131,82 @@
         </div>
       </div>
 
-      <!-- Business demo panel -->
-      <div class="bg-white/10 backdrop-blur-md rounded-3xl p-6 sm:p-8 lg:p-10 border border-white/20 shadow-2xl">
-        <div class="grid lg:grid-cols-5 gap-8 lg:gap-12 items-center">
-          <div class="lg:col-span-2 text-center lg:text-left">
-            <p class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gold-500/20 text-gold-300 text-xs font-bold uppercase tracking-wider mb-4">
-              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"></path></svg>
-              For Business Clients
-            </p>
-            <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-4 leading-tight">
-              End-to-End Software Delivery You Can Trust
-            </h2>
-            <p class="text-lg text-slate-200 mb-6 leading-relaxed">
-              Watch how Grad-a-Gig turns your product backlog into shipped software. We assemble AI-assisted pods that own the full lifecycle — from scoping and build to testing and go-live.
-            </p>
-            <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3">
-              <a href="#client-registration" class="w-full sm:w-auto inline-flex items-center justify-center px-6 py-3.5 rounded-xl bg-gold-500 text-brand-900 font-bold text-base hover:bg-gold-400 transition-colors focus:outline-none focus:ring-2 focus:ring-gold-300 focus:ring-offset-2 focus:ring-offset-brand-900">
-                Book a Consultation
-              </a>
-              <a href="#client-registration" class="w-full sm:w-auto inline-flex items-center justify-center px-6 py-3.5 rounded-xl border-2 border-white/40 text-white font-semibold text-base hover:bg-white/10 transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-brand-900">
-                Submit Product Backlog
-              </a>
+      <!-- Business demo teaser -->
+      <div class="mt-12 lg:mt-16 max-w-4xl mx-auto text-center">
+        <button type="button" id="demo-open" class="group inline-flex flex-col sm:flex-row items-center gap-4 sm:gap-5 text-left rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 p-4 pr-6 hover:bg-white/15 transition-colors focus:outline-none focus:ring-2 focus:ring-gold-300" aria-haspopup="dialog">
+          <div class="relative w-full sm:w-40 aspect-video rounded-xl overflow-hidden bg-slate-900 flex-shrink-0">
+            <img src="https://cdn.loom.com/sessions/thumbnails/3df0e563aac4452882ef6cb45b61d002.jpg" alt="Product demo thumbnail" class="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity" onerror="this.style.display='none'">
+            <div class="absolute inset-0 flex items-center justify-center bg-slate-900/30">
+              <div class="w-10 h-10 rounded-full bg-gold-500 text-brand-900 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                <svg class="w-5 h-5 ml-0.5" fill="currentColor" viewBox="0 0 20 20"><path d="M6.3 5.84a.5.5 0 01.77-.42l7.15 4.16a.5.5 0 010 .84l-7.15 4.16a.5.5 0 01-.77-.42V5.84z"></path></svg>
+              </div>
             </div>
           </div>
-          <div class="lg:col-span-3">
-            <div class="relative w-full aspect-video rounded-2xl overflow-hidden bg-slate-900 shadow-2xl border border-white/10">
-              <iframe
-                src="https://www.loom.com/embed/3df0e563aac4452882ef6cb45b61d002"
-                title="Grad-a-Gig product demo"
-                class="absolute inset-0 w-full h-full"
-                frameborder="0"
-                webkitallowfullscreen
-                mozallowfullscreen
-                allowfullscreen
-                loading="eager"
-              ></iframe>
-            </div>
-            <p class="mt-3 text-center text-sm text-slate-300">
-              See how we deliver outcomes — from backlog to live product.
-            </p>
+          <div>
+            <p class="text-gold-300 text-xs font-bold uppercase tracking-wider mb-1">For Business Clients</p>
+            <p class="text-white font-semibold text-base sm:text-lg">See how we deliver end-to-end software</p>
+            <p class="text-slate-300 text-sm">Watch demo · 2 min</p>
           </div>
+        </button>
+        <div class="mt-6 flex flex-col sm:flex-row items-center justify-center gap-3">
+          <a href="#client-registration" class="w-full sm:w-auto inline-flex items-center justify-center px-6 py-3.5 rounded-xl bg-gold-500 text-brand-900 font-bold text-base hover:bg-gold-400 transition-colors focus:outline-none focus:ring-2 focus:ring-gold-300 focus:ring-offset-2 focus:ring-offset-brand-900">
+            Book a Consultation
+          </a>
+          <a href="#client-registration" class="w-full sm:w-auto inline-flex items-center justify-center px-6 py-3.5 rounded-xl border-2 border-white/40 text-white font-semibold text-base hover:bg-white/10 transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-brand-900">
+            Submit Product Backlog
+          </a>
         </div>
       </div>
     </div>
   </section>
+
+  <!-- Video modal -->
+  <div id="demo-modal" class="fixed inset-0 z-[60] hidden" role="dialog" aria-modal="true" aria-label="Product demo video">
+    <div class="absolute inset-0 bg-slate-900/90 backdrop-blur-sm transition-opacity" id="demo-backdrop"></div>
+    <div class="relative z-10 flex items-center justify-center min-h-screen p-4">
+      <div class="w-full max-w-5xl bg-slate-900 rounded-2xl overflow-hidden shadow-2xl border border-white/10">
+        <div class="flex items-center justify-between px-4 py-3 border-b border-white/10">
+          <p class="text-white font-semibold">Grad-a-Gig Product Demo</p>
+          <button type="button" id="demo-close" class="text-slate-300 hover:text-white p-1 rounded-lg hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white" aria-label="Close demo">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+          </button>
+        </div>
+        <div class="relative aspect-video">
+          <iframe id="demo-iframe" src="" title="Grad-a-Gig product demo" class="absolute inset-0 w-full h-full" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      var demoOpen = document.getElementById('demo-open');
+      var demoModal = document.getElementById('demo-modal');
+      var demoClose = document.getElementById('demo-close');
+      var demoBackdrop = document.getElementById('demo-backdrop');
+      var demoIframe = document.getElementById('demo-iframe');
+      var demoEmbedUrl = 'https://www.loom.com/embed/3df0e563aac4452882ef6cb45b61d002';
+
+      function openDemo() {
+        demoIframe.src = demoEmbedUrl;
+        demoModal.classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeDemo() {
+        demoModal.classList.add('hidden');
+        demoIframe.src = '';
+        document.body.style.overflow = '';
+      }
+
+      demoOpen.addEventListener('click', openDemo);
+      demoClose.addEventListener('click', closeDemo);
+      demoBackdrop.addEventListener('click', closeDemo);
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && !demoModal.classList.contains('hidden')) closeDemo();
+      });
+    })();
+  </script>
 
   <!-- Core Pillars -->
   <section id="model" class="py-20 lg:py-28 bg-white" aria-labelledby="pillars-heading">
