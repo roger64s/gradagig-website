@@ -109,52 +109,46 @@
       <div class="absolute top-1/2 -left-24 w-72 h-72 rounded-full bg-brand-300 blur-3xl"></div>
     </div>
     <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <!-- Primary hero message -->
-      <div class="text-center max-w-4xl mx-auto mb-12 lg:mb-16">
-        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 text-gold-200 text-sm font-medium mb-6 border border-white/10">
-          <span class="w-2 h-2 rounded-full bg-gold-400 animate-pulse"></span>
-          Cooperative business model inspired by Amul
+      <div class="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+        <!-- Primary hero message -->
+        <div class="text-center lg:text-left">
+          <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 text-gold-200 text-sm font-medium mb-6 border border-white/10">
+            <span class="w-2 h-2 rounded-full bg-gold-400 animate-pulse"></span>
+            Cooperative business model inspired by Amul
+          </div>
+          <h1 id="hero-heading" class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight mb-5 leading-tight">
+            Knowledge-Based Work for <span class="text-gold-300">Persons with Disabilities</span>, Minorities, and Women
+          </h1>
+          <p class="text-lg sm:text-xl text-slate-200 mb-8 leading-relaxed">
+            Earn while you Learn. We deliver real outcomes through AI-assisted delivery pods — not hours, not headcount.
+          </p>
+          <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3">
+            <a href="#client-registration" class="w-full sm:w-auto inline-flex items-center justify-center px-6 py-3.5 rounded-xl bg-gold-500 text-brand-900 font-bold text-base hover:bg-gold-400 transition-colors focus:outline-none focus:ring-2 focus:ring-gold-300 focus:ring-offset-2 focus:ring-offset-brand-900">
+              Book a Consultation
+            </a>
+            <a href="#client-registration" class="w-full sm:w-auto inline-flex items-center justify-center px-6 py-3.5 rounded-xl border-2 border-white/40 text-white font-semibold text-base hover:bg-white/10 transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-brand-900">
+              Submit Product Backlog
+            </a>
+          </div>
         </div>
-        <h1 id="hero-heading" class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight mb-5 leading-tight">
-          Knowledge-Based Work for <span class="text-gold-300">Persons with Disabilities</span>, Minorities, and Women
-        </h1>
-        <p class="text-lg sm:text-xl text-slate-200 max-w-3xl mx-auto mb-8 leading-relaxed">
-          Earn while you Learn. We deliver real outcomes through AI-assisted delivery pods — not hours, not headcount.
-        </p>
-        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <a href="#register" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 rounded-xl bg-gold-500 text-brand-900 font-bold text-lg hover:bg-gold-400 transition-colors focus:outline-none focus:ring-2 focus:ring-gold-300 focus:ring-offset-2 focus:ring-offset-brand-900">
-            Join the Cooperative
-          </a>
-          <a href="#model" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 rounded-xl border-2 border-white/30 text-white font-semibold text-lg hover:bg-white/10 transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-brand-900">
-            Explore the Model
-          </a>
-        </div>
-      </div>
 
-      <!-- Business demo teaser -->
-      <div class="mt-12 lg:mt-16 max-w-4xl mx-auto text-center">
-        <button type="button" id="demo-open" class="group inline-flex flex-col sm:flex-row items-center gap-4 sm:gap-5 text-left rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 p-4 pr-6 hover:bg-white/15 transition-colors focus:outline-none focus:ring-2 focus:ring-gold-300" aria-haspopup="dialog">
-          <div class="relative w-full sm:w-40 aspect-video rounded-xl overflow-hidden bg-slate-900 flex-shrink-0">
-            <img src="https://cdn.loom.com/sessions/thumbnails/3df0e563aac4452882ef6cb45b61d002.jpg" alt="Product demo thumbnail" class="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity" onerror="this.style.display='none'">
-            <div class="absolute inset-0 flex items-center justify-center bg-slate-900/30">
-              <div class="w-10 h-10 rounded-full bg-gold-500 text-brand-900 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
-                <svg class="w-5 h-5 ml-0.5" fill="currentColor" viewBox="0 0 20 20"><path d="M6.3 5.84a.5.5 0 01.77-.42l7.15 4.16a.5.5 0 010 .84l-7.15 4.16a.5.5 0 01-.77-.42V5.84z"></path></svg>
+        <!-- Business demo teaser -->
+        <div class="flex justify-center lg:justify-end">
+          <button type="button" id="demo-open" class="group w-full max-w-sm lg:max-w-md inline-flex flex-col rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 p-4 hover:bg-white/15 transition-colors focus:outline-none focus:ring-2 focus:ring-gold-300 text-left" aria-haspopup="dialog">
+            <div class="relative w-full aspect-video rounded-xl overflow-hidden bg-slate-900 mb-4">
+              <img src="https://cdn.loom.com/sessions/thumbnails/3df0e563aac4452882ef6cb45b61d002.jpg" alt="Product demo thumbnail" class="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity" onerror="this.style.display='none'">
+              <div class="absolute inset-0 flex items-center justify-center bg-slate-900/30">
+                <div class="w-12 h-12 rounded-full bg-gold-500 text-brand-900 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                  <svg class="w-6 h-6 ml-0.5" fill="currentColor" viewBox="0 0 20 20"><path d="M6.3 5.84a.5.5 0 01.77-.42l7.15 4.16a.5.5 0 010 .84l-7.15 4.16a.5.5 0 01-.77-.42V5.84z"></path></svg>
+                </div>
               </div>
             </div>
-          </div>
-          <div>
-            <p class="text-gold-300 text-xs font-bold uppercase tracking-wider mb-1">For Business Clients</p>
-            <p class="text-white font-semibold text-base sm:text-lg">See how we deliver end-to-end software</p>
-            <p class="text-slate-300 text-sm">Watch demo · 2 min</p>
-          </div>
-        </button>
-        <div class="mt-6 flex flex-col sm:flex-row items-center justify-center gap-3">
-          <a href="#client-registration" class="w-full sm:w-auto inline-flex items-center justify-center px-6 py-3.5 rounded-xl bg-gold-500 text-brand-900 font-bold text-base hover:bg-gold-400 transition-colors focus:outline-none focus:ring-2 focus:ring-gold-300 focus:ring-offset-2 focus:ring-offset-brand-900">
-            Book a Consultation
-          </a>
-          <a href="#client-registration" class="w-full sm:w-auto inline-flex items-center justify-center px-6 py-3.5 rounded-xl border-2 border-white/40 text-white font-semibold text-base hover:bg-white/10 transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-brand-900">
-            Submit Product Backlog
-          </a>
+            <div>
+              <p class="text-gold-300 text-xs font-bold uppercase tracking-wider mb-1">For Business Clients</p>
+              <p class="text-white font-semibold text-base sm:text-lg">See how we deliver end-to-end software</p>
+              <p class="text-slate-300 text-sm">Watch demo · 2 min</p>
+            </div>
+          </button>
         </div>
       </div>
     </div>
