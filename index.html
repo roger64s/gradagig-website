@@ -756,11 +756,12 @@
           </div>
           <h3 class="text-xl font-bold text-slate-900 mb-2">Client Registration</h3>
           <p class="text-slate-600 mb-6 flex-grow">Submit a project backlog, request a pod, and explore outcome-based pricing.</p>
-          <form class="space-y-4" onsubmit="event.preventDefault(); alert('Thank you! Client registration placeholder.');">
+          <form name="client-registration" method="POST" data-netlify="true" class="space-y-4">
+            <input type="hidden" name="form-name" value="client-registration">
             <label class="sr-only" for="client-name">Client name</label>
-            <input id="client-name" type="text" placeholder="Organization name" class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:border-brand-500 focus:ring-2 focus:ring-brand-200 outline-none transition-colors">
+            <input id="client-name" name="client-name" type="text" placeholder="Organization name" required class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:border-brand-500 focus:ring-2 focus:ring-brand-200 outline-none transition-colors">
             <label class="sr-only" for="client-email">Client email</label>
-            <input id="client-email" type="email" placeholder="Work email" class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:border-brand-500 focus:ring-2 focus:ring-brand-200 outline-none transition-colors">
+            <input id="client-email" name="client-email" type="email" placeholder="Work email" required class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:border-brand-500 focus:ring-2 focus:ring-brand-200 outline-none transition-colors">
             <button type="submit" class="w-full px-5 py-3 rounded-lg bg-brand-700 text-white font-semibold hover:bg-brand-800 transition-colors focus:outline-none focus:ring-2 focus:ring-brand-500 focus:ring-offset-2">
               Register as Client
             </button>
@@ -772,11 +773,12 @@
           </div>
           <h3 class="text-xl font-bold text-slate-900 mb-2">Student Registration</h3>
           <p class="text-slate-600 mb-6 flex-grow">Earn while you learn. Join a pod and work on real client outcomes.</p>
-          <form class="space-y-4" onsubmit="event.preventDefault(); alert('Thank you! Student registration placeholder.');">
+          <form name="student-registration" method="POST" data-netlify="true" class="space-y-4">
+            <input type="hidden" name="form-name" value="student-registration">
             <label class="sr-only" for="student-name">Student name</label>
-            <input id="student-name" type="text" placeholder="Full name" class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:border-brand-500 focus:ring-2 focus:ring-brand-200 outline-none transition-colors">
+            <input id="student-name" name="student-name" type="text" placeholder="Full name" required class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:border-brand-500 focus:ring-2 focus:ring-brand-200 outline-none transition-colors">
             <label class="sr-only" for="student-email">Student email</label>
-            <input id="student-email" type="email" placeholder="Email address" class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:border-brand-500 focus:ring-2 focus:ring-brand-200 outline-none transition-colors">
+            <input id="student-email" name="student-email" type="email" placeholder="Email address" required class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:border-brand-500 focus:ring-2 focus:ring-brand-200 outline-none transition-colors">
             <button type="submit" class="w-full px-5 py-3 rounded-lg bg-violet-700 text-white font-semibold hover:bg-violet-800 transition-colors focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-offset-2">
               Register as Student
             </button>
@@ -788,11 +790,12 @@
           </div>
           <h3 class="text-xl font-bold text-slate-900 mb-2">PwD / Women Registration</h3>
           <p class="text-slate-600 mb-6 flex-grow">Access remote, inclusive, knowledge-based work on your terms.</p>
-          <form class="space-y-4" onsubmit="event.preventDefault(); alert('Thank you! PwD / Women registration placeholder.');">
+          <form name="talent-registration" method="POST" data-netlify="true" class="space-y-4">
+            <input type="hidden" name="form-name" value="talent-registration">
             <label class="sr-only" for="talent-name">Talent name</label>
-            <input id="talent-name" type="text" placeholder="Full name" class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:border-brand-500 focus:ring-2 focus:ring-brand-200 outline-none transition-colors">
+            <input id="talent-name" name="talent-name" type="text" placeholder="Full name" required class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:border-brand-500 focus:ring-2 focus:ring-brand-200 outline-none transition-colors">
             <label class="sr-only" for="talent-email">Talent email</label>
-            <input id="talent-email" type="email" placeholder="Email address" class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:border-brand-500 focus:ring-2 focus:ring-brand-200 outline-none transition-colors">
+            <input id="talent-email" name="talent-email" type="email" placeholder="Email address" required class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:border-brand-500 focus:ring-2 focus:ring-brand-200 outline-none transition-colors">
             <button type="submit" class="w-full px-5 py-3 rounded-lg bg-amber-600 text-white font-semibold hover:bg-amber-700 transition-colors focus:outline-none focus:ring-2 focus:ring-amber-500 focus:ring-offset-2">
               Register as Talent
             </button>

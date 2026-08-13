@@ -60,3 +60,8 @@
 - Ensure each button links to a distinct action.
 - Fix the form so it opens when a relevant button is clicked.
 - Provide a summary of tokens used with a pie chart for internal tracking.
+
+## 2026-08-13
+
+- Investigate why the gradagig.com website is not loading.
+- Fix the registration forms so that client, student, and talent submissions actually send email notifications.
