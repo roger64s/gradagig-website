@@ -65,3 +65,5 @@
 
 - Investigate why the gradagig.com website is not loading.
 - Fix the registration forms so that client, student, and talent submissions actually send email notifications.
+- Send all registration form notifications to `roger.s@gradagig.com`.
+- Add a dedicated `/thank-you.html` page that users see after submitting any registration form.
