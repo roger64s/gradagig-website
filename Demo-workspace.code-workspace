@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../MOC_Workflow"
+		},
+		{
+			"path": "../HubspotCRM"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "GradagigWebsite"
+	}
+}

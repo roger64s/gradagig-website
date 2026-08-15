@@ -75,3 +75,18 @@
 - Position the text above the video thumbnail, inside the light teal border area.
 - Preview changes locally before committing to GitHub.
 - Deploy changes to Vercel and update documentation.
+- Add "See Metrics" button in hero section linking to interactive charts page.
+- Add "Project Metrics" card to Product Demos section.
+- Create interactive Chart.js page (`docs/charts.html`) with:
+  - Pie chart for time distribution
+  - Bar chart for lines of code by date
+  - Stacked bar chart for effort breakdown by category
+  - Line chart for hours spent by date
+  - Category bar chart for total LOC
+  - Data labels showing values on all charts
+  - Different colors for each dashboard stat card
+- Update PROJECT_SUMMARY.md with:
+  - Tab-separated tables for Excel copy-paste
+  - Hours and LOC metrics matching HubSpot CRM format
+  - Visual charts section
+
