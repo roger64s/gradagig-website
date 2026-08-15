@@ -15,6 +15,32 @@
 
 ## Time / Effort Distribution
 
+### Calendar Time Spent by Date (estimated hours)
+
+| Date | Aug 09 | Aug 10 | Aug 11 | Aug 12 | Aug 13 | Aug 15 |
+|------|--------|--------|--------|--------|--------|--------|
+| Hours | 2h | 5h | 5h | 1h | 3h | 1h |
+
+### Lines of Code Changed by Date (actual from git)
+
+| Date | Aug 09 | Aug 10 | Aug 11 | Aug 12 | Aug 13 | Aug 15 |
+|------|--------|--------|--------|--------|--------|--------|
+| LOC | 6 | 825 | 361 | 62 | 70 | 23 |
+
+### Effort Breakdown by Category (estimated)
+
+| Date | Coding | Testing | Deployment | Rework | Planning | Total LOC |
+|------|--------|---------|------------|--------|----------|-----------|
+| Aug 09 | 3 | 1 | 1 | 0 | 1 | 6 |
+| Aug 10 | 371 | 206 | 124 | 83 | 41 | 825 |
+| Aug 11 | 162 | 90 | 54 | 36 | 19 | 361 |
+| Aug 12 | 28 | 16 | 9 | 6 | 3 | 62 |
+| Aug 13 | 32 | 17 | 10 | 7 | 4 | 70 |
+| Aug 15 | 10 | 6 | 4 | 2 | 1 | 23 |
+| **Total** | **606** | **336** | **202** | **134** | **69** | **1,347** |
+
+### Pie Chart - Time Distribution
+
 ```mermaid
 pie title Estimated Time Distribution — Grad-a-Gig Website
     "Coding / editing HTML & content" : 45
@@ -24,14 +50,14 @@ pie title Estimated Time Distribution — Grad-a-Gig Website
     "Planning / git commits" : 3
 ```
 
-## Estimated Effort by Date
+### Bar Chart - Lines of Code by Date
 
 ```mermaid
 xychart-beta
-    title "Estimated Effort by Date"
-    x-axis [2026-08-09, 2026-08-10, 2026-08-11, 2026-08-13, 2026-08-15]
-    y-axis "Effort (arbitrary units)" 0 --> 100
-    bar [70, 50, 90, 30, 20]
+    title "Lines of Code Changed by Date"
+    x-axis [Aug 09, Aug 10, Aug 11, Aug 12, Aug 13, Aug 15]
+    y-axis "Lines of Code" 0 --> 900
+    bar [6, 825, 361, 62, 70, 23]
 ```
 
 ## Timeline
