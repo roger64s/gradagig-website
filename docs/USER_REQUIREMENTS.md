@@ -67,3 +67,11 @@
 - Fix the registration forms so that client, student, and talent submissions actually send email notifications.
 - Send all registration form notifications to `roger.s@gradagig.com`.
 - Add a dedicated `/thank-you.html` page that users see after submitting any registration form.
+
+## 2026-08-15
+
+- Add "ZERO RISK" text overlay on top of the video frame in the hero section.
+- Style: "ZERO RISK" in gold/yellow bold font, "(SourceCode Escrow)" in white normal font.
+- Position the text above the video thumbnail, inside the light teal border area.
+- Preview changes locally before committing to GitHub.
+- Deploy changes to Vercel and update documentation.
