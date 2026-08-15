@@ -17,27 +17,30 @@
 
 ### Calendar Time Spent by Date (estimated hours)
 
-| Date | Aug 09 | Aug 10 | Aug 11 | Aug 12 | Aug 13 | Aug 15 |
-|------|--------|--------|--------|--------|--------|--------|
-| Hours | 2h | 5h | 5h | 1h | 3h | 1h |
+```
+Date	Aug 09	Aug 10	Aug 11	Aug 12	Aug 13	Aug 15
+Hours	2	5	5	1	3	1
+```
 
 ### Lines of Code Changed by Date (actual from git)
 
-| Date | Aug 09 | Aug 10 | Aug 11 | Aug 12 | Aug 13 | Aug 15 |
-|------|--------|--------|--------|--------|--------|--------|
-| LOC | 6 | 825 | 361 | 62 | 70 | 23 |
+```
+Date	Aug 09	Aug 10	Aug 11	Aug 12	Aug 13	Aug 15
+LOC	6	825	361	62	70	23
+```
 
 ### Effort Breakdown by Category (estimated)
 
-| Date | Coding | Testing | Deployment | Rework | Planning | Total LOC |
-|------|--------|---------|------------|--------|----------|-----------|
-| Aug 09 | 3 | 1 | 1 | 0 | 1 | 6 |
-| Aug 10 | 371 | 206 | 124 | 83 | 41 | 825 |
-| Aug 11 | 162 | 90 | 54 | 36 | 19 | 361 |
-| Aug 12 | 28 | 16 | 9 | 6 | 3 | 62 |
-| Aug 13 | 32 | 17 | 10 | 7 | 4 | 70 |
-| Aug 15 | 10 | 6 | 4 | 2 | 1 | 23 |
-| **Total** | **606** | **336** | **202** | **134** | **69** | **1,347** |
+```
+Date	Coding	Testing	Deployment	Rework	Planning	Total LOC
+Aug 09	3	1	1	0	1	6
+Aug 10	371	206	124	83	41	825
+Aug 11	162	90	54	36	19	361
+Aug 12	28	16	9	6	3	62
+Aug 13	32	17	10	7	4	70
+Aug 15	10	6	4	2	1	23
+Total	606	336	202	134	69	1347
+```
 
 ### Pie Chart - Time Distribution
 
