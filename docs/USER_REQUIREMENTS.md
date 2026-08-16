@@ -89,4 +89,6 @@
   - Tab-separated tables for Excel copy-paste
   - Hours and LOC metrics matching HubSpot CRM format
   - Visual charts section
+- Preview changes locally first and update GitHub only after an explicit `Close Project` request.
+- Keep numeric labels visible on all project-metrics charts, with readable font sizing and contrast.
 

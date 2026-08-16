@@ -98,6 +98,7 @@ xychart-beta
 - Video teaser now includes "ZERO RISK (SourceCode Escrow)" text overlay above the thumbnail.
 - Product Demos section includes MOC Workflow, CRM Automation, CodeWithKris, and Project Metrics cards.
 - Interactive charts page at `docs/charts.html` with effort distribution, LOC metrics, and time tracking.
+- Project chart values include visible numeric labels with readable colors and sizing.
 - Site deployed via GitHub push to `origin/master`.
 - `docs/PROJECT_SUMMARY.md` created with pie chart and timeline.
 
