@@ -13,6 +13,8 @@
 - Added client registration anchor for focused conversion.
 - Pushed all updates to GitHub for deployment to `gradagig.com`.
 - Updated the CRM Automation demo button to link to `https://crm-demo-ai-worklow.vercel.app/`.
+- Added Blog navigation and a hero "Read Blog" call to action.
+- Published the Tata Sons blueprint article with a browser-open and download link for its supporting PDF.
 
 ## Time / Effort Distribution
 
@@ -82,7 +84,7 @@ xychart-beta
 
 **Legend (bottom to top):** Coding (45%) | Testing (25%) | Deployment | Rework (20%) | Planning (7%)
 
-**Interactive Charts:** View live charts at [`docs/charts.html`](docs/charts.html) or on the live site at https://gradagig.com/docs/charts.html
+**Interactive Charts:** View live charts at [charts.html](charts.html) or on the live site at https://gradagig.com/docs/charts.html
 
 ## Timeline
 
@@ -93,13 +95,14 @@ xychart-beta
 | 2026-08-11 | Hero demo panel added, iterated to compact teaser, CTAs finalized and pushed |
 | 2026-08-13 | Thank-you page added, form email notifications configured |
 | 2026-08-15 | Added ZERO RISK text overlay to video frame, styling finalized |
-| 2026-08-17 | Updated the CRM Automation demo button URL and verified the local preview |
+| 2026-08-17 | Updated the CRM Automation demo URL; added Blog navigation, Tata Sons article, and linked blueprint PDF |
 
 ## Final State
 - Hero: headline + "Register your interest" CTA + "See Demo" + "See Metrics" buttons + expandable video teaser.
 - Video teaser now includes "ZERO RISK (SourceCode Escrow)" text overlay above the thumbnail.
 - Product Demos section includes MOC Workflow, CRM Automation, CodeWithKris, and Project Metrics cards.
 - CRM Automation demo button links to `https://crm-demo-ai-worklow.vercel.app/`.
+- Blog page publishes "The Ultimate Blueprint for Tata Sons: Rewriting the Legacy" with an accessible PDF download fallback.
 - Interactive charts page at `docs/charts.html` with effort distribution, LOC metrics, and time tracking.
 - Project chart values include visible numeric labels with readable colors and sizing.
 - Site deployed via GitHub push to `origin/master`.
