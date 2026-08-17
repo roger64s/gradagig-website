@@ -95,11 +95,12 @@ xychart-beta
 | 2026-08-11 | Hero demo panel added, iterated to compact teaser, CTAs finalized and pushed |
 | 2026-08-13 | Thank-you page added, form email notifications configured |
 | 2026-08-15 | Added ZERO RISK text overlay to video frame, styling finalized |
-| 2026-08-17 | Updated the CRM Automation demo URL; added Blog navigation, Tata Sons article, and linked blueprint PDF |
+| 2026-08-17 | Updated the CRM Automation demo URL; added Blog navigation, Tata Sons article, linked blueprint PDF, and refined the centered Zero Risk header label |
 
 ## Final State
 - Hero: headline + "Register your interest" CTA + "See Demo" + "See Metrics" buttons + expandable video teaser.
 - Video teaser now includes "ZERO RISK (SourceCode Escrow)" text overlay above the thumbnail.
+- Header displays a compact, centered red "Zero Risk" label beneath the Grad-a-Gig wordmark.
 - Product Demos section includes MOC Workflow, CRM Automation, CodeWithKris, and Project Metrics cards.
 - CRM Automation demo button links to `https://crm-demo-ai-worklow.vercel.app/`.
 - Blog page publishes "The Ultimate Blueprint for Tata Sons: Rewriting the Legacy" with an accessible PDF download fallback.

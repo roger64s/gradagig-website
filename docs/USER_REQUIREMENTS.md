@@ -97,4 +97,5 @@
 - Link the “Open CRM Demo” button to `https://crm-demo-ai-worklow.vercel.app/`.
 - Add a Blog item to the site navigation and a “Read Blog” hero button beside “See Metrics”.
 - Publish the Tata Sons blueprint blog post and link its supporting PDF for visitors to open on the website.
+- Center “Zero Risk” in red below the Grad-a-Gig name in the header.
 
