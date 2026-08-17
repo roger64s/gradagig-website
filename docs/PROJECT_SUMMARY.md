@@ -3,7 +3,7 @@
 ## Project
 - **Name:** Grad-a-Gig Website
 - **Repository:** `roger64s/gradagig-website`
-- **Period:** 2026-08-09 to 2026-08-15
+- **Period:** 2026-08-09 to 2026-08-17
 - **Goal:** Update the public landing page to surface end-to-end software delivery for business clients with a prominent demo and clear conversion path, and make registration forms functional.
 
 ## Scope Delivered
@@ -12,6 +12,7 @@
 - Added CTAs: "Register your interest" and "See Demo".
 - Added client registration anchor for focused conversion.
 - Pushed all updates to GitHub for deployment to `gradagig.com`.
+- Updated the CRM Automation demo button to link to `https://crm-demo-ai-worklow.vercel.app/`.
 
 ## Time / Effort Distribution
 
@@ -92,11 +93,13 @@ xychart-beta
 | 2026-08-11 | Hero demo panel added, iterated to compact teaser, CTAs finalized and pushed |
 | 2026-08-13 | Thank-you page added, form email notifications configured |
 | 2026-08-15 | Added ZERO RISK text overlay to video frame, styling finalized |
+| 2026-08-17 | Updated the CRM Automation demo button URL and verified the local preview |
 
 ## Final State
 - Hero: headline + "Register your interest" CTA + "See Demo" + "See Metrics" buttons + expandable video teaser.
 - Video teaser now includes "ZERO RISK (SourceCode Escrow)" text overlay above the thumbnail.
 - Product Demos section includes MOC Workflow, CRM Automation, CodeWithKris, and Project Metrics cards.
+- CRM Automation demo button links to `https://crm-demo-ai-worklow.vercel.app/`.
 - Interactive charts page at `docs/charts.html` with effort distribution, LOC metrics, and time tracking.
 - Project chart values include visible numeric labels with readable colors and sizing.
 - Site deployed via GitHub push to `origin/master`.

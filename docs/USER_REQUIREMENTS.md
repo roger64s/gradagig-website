@@ -92,3 +92,7 @@
 - Preview changes locally first and update GitHub only after an explicit `Close Project` request.
 - Keep numeric labels visible on all project-metrics charts, with readable font sizing and contrast.
 
+## 2026-08-17
+
+- Link the “Open CRM Demo” button to `https://crm-demo-ai-worklow.vercel.app/`.
+
