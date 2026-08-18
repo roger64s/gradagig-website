@@ -16,6 +16,7 @@
 - Added Blog navigation and a hero "Read Blog" call to action.
 - Published the Tata Sons blueprint article with a browser-open and download link for its supporting PDF.
 - Refined the homepage header, hero copy, responsive actions, and impact donut chart through desktop and mobile preview iterations.
+- Added estimated Aug 18 metrics to the interactive charts and summary tables.
 
 ## Time / Effort Distribution
 
@@ -112,8 +113,12 @@ xychart-beta
 - Blog page publishes "The Ultimate Blueprint for Tata Sons: Rewriting the Legacy" with an accessible PDF download fallback.
 - Interactive charts page at `docs/charts.html` with effort distribution, LOC metrics, and time tracking.
 - Project chart values include visible numeric labels with readable colors and sizing.
+- Daily metrics use estimated LOC, hours, and effort values where exact tracking is unavailable.
 - Site deployed via GitHub push to `origin/master`.
 - `docs/PROJECT_SUMMARY.md` created with pie chart and timeline.
+
+## Cross-Project Follow-Up
+- Standardize this estimated daily metrics format across MOC Workflow, CRMAutomation, and future projects.
 
 ## Notes / Learnings
 - Iterative CTA refinement improved clarity: single primary action + secondary demo link outperformed multiple similar buttons.
