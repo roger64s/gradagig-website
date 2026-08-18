@@ -76,19 +76,19 @@
         <!-- Summary Stats -->
         <div class="summary-stats">
             <div class="stat-card" style="background: linear-gradient(135deg, #14b8a6 0%, #0d9488 100%);">
-                <div class="stat-value">1,347</div>
+                <div class="stat-value">1,474</div>
                 <div class="stat-label">Total Lines of Code</div>
             </div>
             <div class="stat-card" style="background: linear-gradient(135deg, #F4C430 0%, #d4a520 100%);">
-                <div class="stat-value">17h</div>
+                <div class="stat-value">23h</div>
                 <div class="stat-label">Total Hours</div>
             </div>
             <div class="stat-card" style="background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);">
-                <div class="stat-value">6</div>
+                <div class="stat-value">7</div>
                 <div class="stat-label">Working Days</div>
             </div>
             <div class="stat-card" style="background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);">
-                <div class="stat-value">45</div>
+                <div class="stat-value">46</div>
                 <div class="stat-label">Git Commits</div>
             </div>
         </div>
@@ -184,10 +184,10 @@
         new Chart(document.getElementById('barChart'), {
             type: 'bar',
             data: {
-                labels: ['Aug 09', 'Aug 10', 'Aug 11', 'Aug 12', 'Aug 13', 'Aug 15'],
+                labels: ['Aug 09', 'Aug 10', 'Aug 11', 'Aug 12', 'Aug 13', 'Aug 15', 'Aug 18'],
                 datasets: [{
                     label: 'Lines of Code',
-                    data: [6, 825, 361, 62, 70, 23],
+                    data: [6, 825, 361, 62, 70, 23, 127],
                     backgroundColor: colors.primary,
                     borderRadius: 8
                 }]
@@ -227,31 +227,31 @@
         new Chart(document.getElementById('stackedChart'), {
             type: 'bar',
             data: {
-                labels: ['Aug 09', 'Aug 10', 'Aug 11', 'Aug 12', 'Aug 13', 'Aug 15'],
+                labels: ['Aug 09', 'Aug 10', 'Aug 11', 'Aug 12', 'Aug 13', 'Aug 15', 'Aug 18'],
                 datasets: [
                     {
                         label: 'Coding',
-                        data: [3, 371, 162, 28, 32, 10],
+                        data: [3, 371, 162, 28, 32, 10, 3],
                         backgroundColor: colors.coding
                     },
                     {
                         label: 'Testing',
-                        data: [1, 206, 90, 16, 17, 6],
+                        data: [1, 206, 90, 16, 17, 6, 2],
                         backgroundColor: colors.testing
                     },
                     {
                         label: 'Deployment',
-                        data: [1, 124, 54, 9, 10, 4],
+                        data: [1, 124, 54, 9, 10, 4, 0],
                         backgroundColor: colors.deployment
                     },
                     {
                         label: 'Rework',
-                        data: [0, 83, 36, 6, 7, 2],
+                        data: [0, 83, 36, 6, 7, 2, 1],
                         backgroundColor: colors.rework
                     },
                     {
                         label: 'Planning',
-                        data: [1, 41, 19, 3, 4, 1],
+                        data: [1, 41, 19, 3, 4, 1, 0],
                         backgroundColor: colors.planning
                     }
                 ]
@@ -293,10 +293,10 @@
         new Chart(document.getElementById('hoursChart'), {
             type: 'line',
             data: {
-                labels: ['Aug 09', 'Aug 10', 'Aug 11', 'Aug 12', 'Aug 13', 'Aug 15'],
+                labels: ['Aug 09', 'Aug 10', 'Aug 11', 'Aug 12', 'Aug 13', 'Aug 15', 'Aug 18'],
                 datasets: [{
                     label: 'Hours Spent',
-                    data: [2, 5, 5, 1, 3, 1],
+                    data: [2, 5, 5, 1, 3, 1, 6],
                     borderColor: colors.primary,
                     backgroundColor: colors.primary + '20',
                     fill: true,
@@ -344,7 +344,7 @@
                 labels: ['Coding', 'Testing', 'Deployment', 'Rework', 'Planning'],
                 datasets: [{
                     label: 'Total LOC',
-                    data: [606, 336, 202, 134, 69],
+                    data: [609, 338, 202, 135, 69],
                     backgroundColor: [colors.coding, colors.testing, colors.deployment, colors.rework, colors.planning],
                     borderRadius: 8
                 }]

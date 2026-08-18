@@ -22,15 +22,15 @@
 ### Calendar Time Spent by Date (estimated hours)
 
 ```
-Date	Aug 09	Aug 10	Aug 11	Aug 12	Aug 13	Aug 15
-Hours	2	5	5	1	3	1
+Date	Aug 09	Aug 10	Aug 11	Aug 12	Aug 13	Aug 15	Aug 18
+Hours	2	5	5	1	3	1	6
 ```
 
 ### Lines of Code Changed by Date (actual from git)
 
 ```
-Date	Aug 09	Aug 10	Aug 11	Aug 12	Aug 13	Aug 15
-LOC	6	825	361	62	70	23
+Date	Aug 09	Aug 10	Aug 11	Aug 12	Aug 13	Aug 15	Aug 18
+LOC	6	825	361	62	70	23	127
 ```
 
 ### Effort Breakdown by Category (estimated)
@@ -43,7 +43,8 @@ Aug 11	162	90	54	36	19	361
 Aug 12	28	16	9	6	3	62
 Aug 13	32	17	10	7	4	70
 Aug 15	10	6	4	2	1	23
-Total	606	336	202	134	69	1347
+Aug 18	3	2	0	1	0	127
+Total	609	338	202	135	69	1474
 ```
 
 ### Visual Charts
@@ -64,9 +65,9 @@ pie title Estimated Time Distribution — Grad-a-Gig Website
 ```mermaid
 xychart-beta
     title "Lines of Code Changed by Date"
-    x-axis [Aug 09, Aug 10, Aug 11, Aug 12, Aug 13, Aug 15]
+    x-axis [Aug 09, Aug 10, Aug 11, Aug 12, Aug 13, Aug 15, Aug 18]
     y-axis "Lines of Code" 0 --> 900
-    bar [6, 825, 361, 62, 70, 23]
+    bar [6, 825, 361, 62, 70, 23, 127]
 ```
 
 #### Stacked Bar Chart - Effort Breakdown by Category
@@ -74,13 +75,13 @@ xychart-beta
 ```mermaid
 xychart-beta
     title "Effort Breakdown by Category (LOC)"
-    x-axis [Aug 09, Aug 10, Aug 11, Aug 12, Aug 13, Aug 15]
+    x-axis [Aug 09, Aug 10, Aug 11, Aug 12, Aug 13, Aug 15, Aug 18]
     y-axis "Lines of Code" 0 --> 900
-    bar [3, 371, 162, 28, 32, 10]
-    bar [1, 206, 90, 16, 17, 6]
-    bar [1, 124, 54, 9, 10, 4]
-    bar [0, 83, 36, 6, 7, 2]
-    bar [1, 41, 19, 3, 4, 1]
+    bar [3, 371, 162, 28, 32, 10, 3]
+    bar [1, 206, 90, 16, 17, 6, 2]
+    bar [1, 124, 54, 9, 10, 4, 0]
+    bar [0, 83, 36, 6, 7, 2, 1]
+    bar [1, 41, 19, 3, 4, 1, 0]
 ```
 
 **Legend (bottom to top):** Coding (45%) | Testing (25%) | Deployment | Rework (20%) | Planning (7%)

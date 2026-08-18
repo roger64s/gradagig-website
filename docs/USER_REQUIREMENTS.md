@@ -123,4 +123,5 @@
 - Keep the complete “28% Reliability” label visible inside the coral segment.
 - Center the `32% Learning` label within the yellow segment and keep it slightly toward the outer edge without clipping.
 - Preview the final website in both desktop and mobile layouts before closing the project.
+- Keep daily LOC, hours, and effort metrics updated with estimated values when exact tracking is unavailable.
 
