@@ -3,7 +3,7 @@
 ## Project
 - **Name:** Grad-a-Gig Website
 - **Repository:** `roger64s/gradagig-website`
-- **Period:** 2026-08-09 to 2026-08-17
+- **Period:** 2026-08-09 to 2026-08-18
 - **Goal:** Update the public landing page to surface end-to-end software delivery for business clients with a prominent demo and clear conversion path, and make registration forms functional.
 
 ## Scope Delivered
@@ -15,6 +15,7 @@
 - Updated the CRM Automation demo button to link to `https://crm-demo-ai-worklow.vercel.app/`.
 - Added Blog navigation and a hero "Read Blog" call to action.
 - Published the Tata Sons blueprint article with a browser-open and download link for its supporting PDF.
+- Refined the homepage header, hero copy, responsive actions, and impact donut chart through desktop and mobile preview iterations.
 
 ## Time / Effort Distribution
 
@@ -96,9 +97,13 @@ xychart-beta
 | 2026-08-13 | Thank-you page added, form email notifications configured |
 | 2026-08-15 | Added ZERO RISK text overlay to video frame, styling finalized |
 | 2026-08-17 | Updated the CRM Automation demo URL; added Blog navigation, Tata Sons article, linked blueprint PDF, and refined the centered Zero Risk header label |
+| 2026-08-18 | Reworked responsive homepage wording, navigation actions, and curved in-segment donut labels; completed desktop and mobile preview review |
 
 ## Final State
-- Hero: headline + "Register your interest" CTA + "See Demo" + "See Metrics" buttons + expandable video teaser.
+- Hero: three-line responsive headline + "Join", "Demo", "Metrics", and "Blog" actions + expandable video teaser.
+- Hero supporting copy highlights AI-assisted, results-based delivery with pay-on-delivery terms.
+- Desktop and mobile navigation keep a single top-level Join button; the mobile menu remains available through the hamburger control.
+- Impact donut chart uses a larger, thicker ring with curved labels inside the matching teal, yellow, and coral segments and no separate legend.
 - Video teaser now includes "ZERO RISK (SourceCode Escrow)" text overlay above the thumbnail.
 - Header displays a compact, centered red "Zero Risk" label beneath the Grad-a-Gig wordmark.
 - Product Demos section includes MOC Workflow, CRM Automation, CodeWithKris, and Project Metrics cards.

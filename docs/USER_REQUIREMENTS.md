@@ -99,3 +99,28 @@
 - Publish the Tata Sons blueprint blog post and link its supporting PDF for visitors to open on the website.
 - Center “Zero Risk” in red below the Grad-a-Gig name in the header.
 
+## 2026-08-18
+
+- Remove the Kris the Jumbo logo from the top banner on all pages while keeping the CodeWithKris content available on the homepage.
+- Replace “Minorities” with “Students” throughout the website and reduce the hero heading size so it fits mobile screens.
+- Format the hero heading into three lines: “Knowledge-Based Work for”, “Persons with Disabilities,”, and “Students and Women” on desktop and mobile.
+- Make the hero action buttons compact in both desktop and mobile layouts.
+- Rename registration menu and button labels to “Join” throughout the website.
+- Shorten the hero action labels to “Demo”, “Metrics”, and “Blog”.
+- Remove the duplicate Join links from the desktop and mobile top menus, keeping the top-right Join button.
+- Align the desktop navigation closer to the top-right Join button.
+- Keep “Cooperative business model inspired by Amul” in both desktop and mobile views.
+- On mobile, keep “inspired by Amul” on the second line of the badge.
+- Remove the decorative dot before the Amul badge text on desktop and mobile.
+- Display only “Earn while you learn” in yellow/gold text wherever it appears in visible page copy.
+- Amend the hero supporting copy to emphasize results-based delivery and payment on delivery.
+- Keep “AI-assisted” together without a line break in the hero copy.
+- Place each donut chart percentage label inside its relevant colored segment and remove the separate legend below it.
+- Curve each donut segment label along its segment and use matching segment colors for the label fonts.
+- Increase the donut size and label font for easier reading without changing the curved orientation.
+- Increase the donut ring thickness to improve visual clarity.
+- Match the donut chart labels to the supplied reference image with centered curved text, matching colors, and readable contrast.
+- Keep the complete “28% Reliability” label visible inside the coral segment.
+- Center the `32% Learning` label within the yellow segment and keep it slightly toward the outer edge without clipping.
+- Preview the final website in both desktop and mobile layouts before closing the project.
+
