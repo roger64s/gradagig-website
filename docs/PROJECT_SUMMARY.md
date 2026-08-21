@@ -24,7 +24,7 @@
 
 ```
 Date	Aug 09	Aug 10	Aug 11	Aug 12	Aug 13	Aug 15	Aug 18
-Hours	2	5	5	1	3	1	6
+Hours	2	5	5	1	3	1	1
 ```
 
 ### Lines of Code Changed by Date (actual from git)

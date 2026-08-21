@@ -125,4 +125,13 @@
 - Preview the final website in both desktop and mobile layouts before closing the project.
 - Keep daily LOC, hours, and effort metrics updated with estimated values when exact tracking is unavailable.
 - Apply the same estimated daily metrics format to Grad-a-Gig, MOC Workflow, CRMAutomation, and all future projects.
+- Correct Grad-a-Gig Aug 18 estimated time to 1 hour, reflecting the 08:00–09:00 work session.
+- Show cumulative total hours from project start through the current date in the hours chart heading.
+
+## 2026-08-21
+
+- Update the founding team section with cleaner role labels and replace the initials placeholders with member photos from the project docs/photos folder.
+- Ensure the Team link appears in both the desktop navigation and the mobile burger menu.
+- Preview the homepage locally and confirm the Team section is visible and readable.
+- Close the project by updating the documentation, staging the final website files, and publishing the site to the GitHub repository.
 
