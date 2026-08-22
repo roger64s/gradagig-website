@@ -135,3 +135,7 @@
 - Preview the homepage locally and confirm the Team section is visible and readable.
 - Close the project by updating the documentation, staging the final website files, and publishing the site to the GitHub repository.
 
+## 2026-08-22
+
+- Add a Login button to the CodeWithKris section that opens the live CodeWithKris Vercel site.
+
