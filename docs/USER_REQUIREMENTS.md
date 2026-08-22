@@ -145,4 +145,5 @@
 - Replace the old CodeWithKris mascot logo on the Gradagig page with `public/CodewithKris_logo.png`.
 - Remove Login from the CodeWithKris hero and place a compact Login button beside the new CodeWithKris logo.
 - Make the three CodeWithKris hero buttons compact instead of full-width.
+- Make the CodeWithKris Page Project Metrics button open CodeWithKris-only metrics, separate from Grad-a-Gig Website metrics.
 

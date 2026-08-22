@@ -18,6 +18,7 @@
 - Refined the homepage header, hero copy, responsive actions, and impact donut chart through desktop and mobile preview iterations.
 - Added estimated Aug 18 metrics to the interactive charts and summary tables.
 - Added a Login button in the CodeWithKris section linking to the live CodeWithKris Vercel application.
+- Updated the CodeWithKris hero Project Metrics action to open the CodeWithKris-only metrics page at `https://codewithkris.vercel.app/docs/charts.html`.
 - Replaced the CodeWithKris Challenge, How It Works, and Three Learning Phases visuals with the supplied `TheProblem.png`, `HowWorks.png`, and `TheImpact.png` assets.
 - Replaced the old CodeWithKris mascot artwork with `CodewithKris_logo.png`, moved Login beside that logo, and compacted the three CodeWithKris hero buttons.
 
@@ -103,7 +104,7 @@ xychart-beta
 | 2026-08-15 | Added ZERO RISK text overlay to video frame, styling finalized |
 | 2026-08-17 | Updated the CRM Automation demo URL; added Blog navigation, Tata Sons article, linked blueprint PDF, and refined the centered Zero Risk header label |
 | 2026-08-18 | Reworked responsive homepage wording, navigation actions, and curved in-segment donut labels; completed desktop and mobile preview review |
-| 2026-08-22 | Added and verified the CodeWithKris Login button linking to the live Vercel app; updated closeout documentation |
+| 2026-08-22 | Added and verified the CodeWithKris Login button, replacement visuals, and separate CodeWithKris metrics link; updated closeout documentation |
 
 ## Final State
 - Hero: three-line responsive headline + "Join", "Demo", "Metrics", and "Blog" actions + expandable video teaser.
@@ -115,6 +116,7 @@ xychart-beta
 - Product Demos section includes MOC Workflow, CRM Automation, CodeWithKris, and Project Metrics cards.
 - CRM Automation demo button links to `https://crm-demo-ai-worklow.vercel.app/`.
 - CodeWithKris section includes a Login button linking to `https://codewithkris.vercel.app/`.
+- CodeWithKris hero Project Metrics action links to the CodeWithKris-only charts at `https://codewithkris.vercel.app/docs/charts.html`.
 - CodeWithKris section uses the supplied local Problem, How Works, Impact, and CodeWithKris logo assets.
 - CodeWithKris hero actions are compact; Login appears beside the lower CodeWithKris logo rather than in the top hero.
 - Blog page publishes "The Ultimate Blueprint for Tata Sons: Rewriting the Legacy" with an accessible PDF download fallback.
