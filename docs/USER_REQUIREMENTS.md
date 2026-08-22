@@ -138,4 +138,11 @@
 ## 2026-08-22
 
 - Add a Login button to the CodeWithKris section that opens the live CodeWithKris Vercel site.
+- Add a Project Metrics button to the CodeWithKris section linking to the interactive metrics page.
+- Replace the CodeWithKris Challenge image with `public/TheProblem.png` and update the headline statistic to “More than 600 million individuals Impacted by Speech and Communication Barriers”.
+- Replace the CodeWithKris How It Works image with `public/HowWorks.png`.
+- Replace the images in the Three Learning Phases section with `public/TheImpact.png`.
+- Replace the old CodeWithKris mascot logo on the Gradagig page with `public/CodewithKris_logo.png`.
+- Remove Login from the CodeWithKris hero and place a compact Login button beside the new CodeWithKris logo.
+- Make the three CodeWithKris hero buttons compact instead of full-width.
 

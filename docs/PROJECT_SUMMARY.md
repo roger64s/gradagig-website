@@ -18,6 +18,8 @@
 - Refined the homepage header, hero copy, responsive actions, and impact donut chart through desktop and mobile preview iterations.
 - Added estimated Aug 18 metrics to the interactive charts and summary tables.
 - Added a Login button in the CodeWithKris section linking to the live CodeWithKris Vercel application.
+- Replaced the CodeWithKris Challenge, How It Works, and Three Learning Phases visuals with the supplied `TheProblem.png`, `HowWorks.png`, and `TheImpact.png` assets.
+- Replaced the old CodeWithKris mascot artwork with `CodewithKris_logo.png`, moved Login beside that logo, and compacted the three CodeWithKris hero buttons.
 
 ## Time / Effort Distribution
 
@@ -113,6 +115,8 @@ xychart-beta
 - Product Demos section includes MOC Workflow, CRM Automation, CodeWithKris, and Project Metrics cards.
 - CRM Automation demo button links to `https://crm-demo-ai-worklow.vercel.app/`.
 - CodeWithKris section includes a Login button linking to `https://codewithkris.vercel.app/`.
+- CodeWithKris section uses the supplied local Problem, How Works, Impact, and CodeWithKris logo assets.
+- CodeWithKris hero actions are compact; Login appears beside the lower CodeWithKris logo rather than in the top hero.
 - Blog page publishes "The Ultimate Blueprint for Tata Sons: Rewriting the Legacy" with an accessible PDF download fallback.
 - Interactive charts page at `docs/charts.html` with effort distribution, LOC metrics, and time tracking.
 - Project chart values include visible numeric labels with readable colors and sizing.
